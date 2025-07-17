@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amit Kumar - Portfolio</title>
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #2980b9;
+      --bg: #f9f9f9;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background-color: white;
+      padding: 10px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      margin-bottom: 15px;
+      color: var(--primary);
+      font-size: 1.5rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+    }
+
+    #about img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background-color: #ecf0f1;
+      padding: 8px 12px;
+      margin: 6px 0;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: #fdfdfd;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .project-card img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
+
+    .resume-btn:hover {
+      background-color: #1f6fa3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--primary);
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Amit Kumar</h1>
+    <p>Web Developer | Tech Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <center><img src="amit.jpg" alt="Amit's photo"></center>
+    <p>I’m a beginner web developer with a passion for clean design and interactive user experiences. I enjoy learning new technologies and turning ideas into reality using HTML, CSS, and JavaScript. Currently exploring React and backend development.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React (Basics)</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <img src="image.png" alt="Portfolio Screenshot">
+        <p>A modern personal portfolio website using HTML & CSS, fully responsive.</p>
+      </div>
+      <div class="project-card">
+        <h3>Doctor's Care</h3>
+        <img src="image.jpg" alt="Doctor's Website Screenshot">
+        <p>A health-related website using HTML, CSS, and JavaScript with smooth UI.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p><a class="resume-btn" href="Amit-Kumar-Resume.pdf" download>📄 Download Resume</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:amit2313154@akgec.ac.in">amit2313154@akgec.ac.in</a></p>
+    <p>Phone: +91 9151619508</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Amit Kumar. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amit Kumar - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+    }
+
+    header, footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    nav {
+      background-color: #0059b3;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffd700;
+    }
+
+    section {
+      padding: 40px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 1000px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    img {
+      width: 150px;
+      border-radius: 50%;
+    }
+
+    h2 {
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: #e6f0ff;
+      border: 1px solid #cce0ff;
+      padding: 15px;
+      border-radius: 10px;
+      width: 45%;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #003366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .resume-btn:hover {
+      background-color: #0059b3;
+    }
+
+    footer p {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Amit Kumar</h1>
+    <p>Web Developer | Tech Enthusiast | Lifelong Learner</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="amit.jpg" alt="Amit Kumar">
+    <p>Hello! I'm Amit, a web developer who is passionate about creating beautiful and functional websites. I love solving problems with code and continuously improving my skills. My journey into tech started with curiosity, and now I enjoy turning ideas into interactive web experiences.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5 & CSS3</li>
+      <li>JavaScript (ES6+)</li>
+      <li>React.js (Basics)</li>
+      <li>Responsive Design</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Personal Portfolio</h3>
+        <p>A responsive portfolio website created using HTML & CSS to showcase my work and skills.</p>
+        <img src="image.png" alt="Portfolio Screenshot">
+      </div>
+      <div class="project-card">
+        <h3>Doctor's Care</h3>
+        <p>A simple healthcare website using HTML, CSS, and JavaScript featuring services and booking form.</p>
+        <img src="image.jpg" alt="Doctor Care Screenshot">
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <a class="resume-btn" href="Amit-Kumar-Resume.pdf" download>📄 Download Resume (PDF)</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:amit2313154@akgec.ac.in">amit2313154@akgec.ac.in</a></p>
+    <p>Phone: +91 9151619508</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Amit Kumar</p>
+    <p>All rights reserved.</p>
+  </footer>
+
+</body>
+</html> -->
